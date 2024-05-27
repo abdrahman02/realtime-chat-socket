@@ -1,7 +1,7 @@
 import { Server } from "socket.io";
 
 const io = new Server({
-  /* options */
+  cors: "http://localhost:5173",
 });
 
 io.on("connection", (socket) => {
